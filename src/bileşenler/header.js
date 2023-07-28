@@ -42,9 +42,9 @@ const headerEkleyici = (secici) => {
   // fakat aynı zamanda bir değişken de alabilir (bknz: querySelector(secici))
 
   const headerDOM = Header(
-    "Barbie'nin film müzikleri bir albümde toplandı",
-    "26.07.2023",
-    "Greta Gerwig'in yönetmen koltuğunda oturduğu Barbie filmi şu sıralar tüm dünyanın gündeminde. Barbie gibi giyinip sinemaya gidenler, sosyal medyada 'Hi Barbie!' akımına ayak uyduranlar veya Barbie film müziklerini durmadan dinleyenler... Dua Lipa, Nicki Minaj ve KAROL G gibi birçok ünlü müzisyenin şarkıları, 'Barbie The Movie' albümünde yer aldı."
+    "Teknoloji Zamanı",
+    "28 Temmuz 2023",
+    "sağdaki yazı"
   );
 
   const contDOM = document.querySelector(secici);
