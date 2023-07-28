@@ -56,5 +56,6 @@ Aşağıdaki soruları yanıtlayarak bu sprint'in kavramlarını anladığınız
 2. Bir event nedir?
    Tıklama, imleci hareket ettirme, sayfayı kaydırma, tuşa basma gibi kullanıcının internet sayfasıyla girebileceği her türlü etkileşim yoluna event denir.
 3. Bir event dinleyici(listener) nedir?
+   Event dinleyiciler bir kullanıcı interaction'ıyla bu interaction sonucunda çalışacak kodun ilişkilendirilmesi için kullanılır.
 4. Neden bir NodeList'i Array'e dönüştürelim??
 5. Bileşen nedir?
