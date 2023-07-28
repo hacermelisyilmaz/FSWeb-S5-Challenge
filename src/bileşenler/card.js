@@ -2,7 +2,7 @@ const Card = (makale) => {
   // GÖREV 5
   // ---------------------
   // Aşağıda gördüğünüz işaretlemeyi döndürmesi gereken bu fonksiyonu uygulayın.
-  // Tek argümanı olarak "anabaslik", "yazarFoto" ve "yazarAdı" özelliklerine sahip bir "makale" nesnesi alır.
+  // Tek argümanı olarak "anabaslik", "yazarFoto" ve "yazarAdi" özelliklerine sahip bir "makale" nesnesi alır.
   // Kullanılan etiketler, öğelerin hiyerarşisi ve öznitelikleri sağlanan işaretlemeyle tam olarak eşleşmelidir!
   // Öğelerin içindeki metin, "textContent" özelliği kullanılarak ayarlanacaktır ("innerText" DEĞİL).
   // Bir kullanıcı bir kartı tıkladığında makalenin başlığının konsola kaydedilmesi için click event dinleyicisi ekleyin.
@@ -17,7 +17,37 @@ const Card = (makale) => {
   //   </div>
   // </div>
   //
-}
+
+  const cardDiv = document.createElement("div");
+  cardDiv.className = "card";
+
+  const headlineDiv = document.createElement("div");
+  headlineDiv.className = "headline";
+  headlineDiv.textContent = makale["anabaslik"];
+
+  const authorDiv = document.createElement("div");
+  authorDiv.className = "author";
+
+  const imgDiv = document.createElement("div");
+  imgDiv.className = "img-container";
+  const img = document.createElement("img");
+  img.setAttribute("src", makale["yazarFoto"]);
+  imgDiv.appendChild(img);
+
+  const yazarAdiSpan = document.createElement("span");
+  yazarAdiSpan.textContent = `${makale["yazarAdi"]} tarafından`;
+
+  authorDiv.append(imgDiv, yazarAdiSpan);
+
+  cardDiv.append(headlineDiv, authorDiv);
+
+  cardDiv.addEventListener("click", (event) => {
+    const headlineContent = event.target.querySelector("div.headline");
+    console.log(headlineContent.textContent);
+  });
+
+  return cardDiv;
+};
 
 const cardEkleyici = (secici) => {
   // GÖREV 6
@@ -28,6 +58,6 @@ const cardEkleyici = (secici) => {
   // Card bileşenini kullanarak yanıttaki her makale nesnesinden bir kart oluşturun.
   // Her cardı, fonksiyona iletilen seçiciyle eşleşen DOM'daki öğeye ekleyin.
   //
-}
+};
 
-export { Card, cardEkleyici }
+export { Card, cardEkleyici };
