@@ -10,9 +10,9 @@ Bu sprint mücadelesi sırasında işbirliği yapmanıza izin verilmez.
 
 ### Proje Kurulumu
 
-* [ ] Bu projenyi forklayarak bir kopyasını oluşturun.
-* [ ] Reponun kendi versiyonunuzu klonlayın.
-* [ ] Commitinizi pushlayın: `git push origin main`.
+- [x] Bu projenyi forklayarak bir kopyasını oluşturun.
+- [x] Reponun kendi versiyonunuzu klonlayın.
+- [x] Commitinizi pushlayın: `git push origin main`.
 
 ## Proje Açıklaması
 
@@ -26,17 +26,17 @@ Aşağıda listelenen minimum uygulanabilir ürün (MVP) spesifikasyonlarını k
 
 ### Detaylar
 
-- [ ] Komut satırınızla projenin kök dizinine gidin.
-- [ ] `package.json` dosyasında listelenen bağımlılıkları indirmek için `npm install` komutunu çalıştırın.
-- [ ] Projeyi derlemek ve sunmak için `npm start` komutunu çalıştırın.
-- [ ] Chrome'da `http://localhost:3000` konumuna gidin
-- [ ] Testleri çalıştırmak için ayrı bir terminalde `npm test` komutunu yazın.
+- [x] Komut satırınızla projenin kök dizinine gidin.
+- [x] `package.json` dosyasında listelenen bağımlılıkları indirmek için `npm install` komutunu çalıştırın.
+- [x] Projeyi derlemek ve sunmak için `npm start` komutunu çalıştırın.
+- [x] Chrome'da `http://localhost:3000` konumuna gidin
+- [x] Testleri çalıştırmak için ayrı bir terminalde `npm test` komutunu yazın.
 
 **MVP için adımlar:**
 
-- [ ] Adım 1 ve 2 `src/bileşenler/header.js` dosyasında açıklandı.
-- [ ] Adım 3 ve 4 `src/bileşenler/tabs.js` dosyasında açıklandı.
-- [ ] Adım 5 ve 6 `src/bileşenler/card.js` dosyasında açıklandı.
+- [x] Adım 1 ve 2 `src/bileşenler/header.js` dosyasında açıklandı.
+- [x] Adım 3 ve 4 `src/bileşenler/tabs.js` dosyasında açıklandı.
+- [x] Adım 5 ve 6 `src/bileşenler/card.js` dosyasında açıklandı.
 
 **Önemli Notlar:**
 
@@ -47,12 +47,12 @@ Aşağıda listelenen minimum uygulanabilir ürün (MVP) spesifikasyonlarını k
 - Yazım denetimi ve dilbilgisi denetimi de dahil olmak üzere çalışmanızı gözden geçirmek, iyileştirmek için zaman planlayın.
 - MVP'yi karşılayan bir meydan okuma göndermek, çok fazla detayla uğraşılıp da çalışmayan bir kod göndermekten daha iyidir.
 
-
 ## Ek Sorular
 
 Aşağıdaki soruları yanıtlayarak bu sprint'in kavramlarını anladığınızı gösterin. Her sorudan sonra yanıtlarınızı eklemek için bu belgeyi düzenleyin.
 
 1. DOM nedir?
+   Tarayıcı, HTML ve CSS kodlarıyla sayfayı inşa ettikten sonra JavaScript kullanarak sayfanın görünümü ve eylemleri için, HTML kodundaki her ögeyi içeren obje tipli bir model inşa eder. Bu objeye Belge Nesne Modeli (Document Object Model) yani kısaca DOM denir. Çok basitleştirmek istersek: JavaScript içinden erişebilmek için JS içinde tanımladığımız HTML elementlerinin her biri DOM oluyor.
 2. Bir event nedir?
 3. Bir event dinleyici(listener) nedir?
 4. Neden bir NodeList'i Array'e dönüştürelim??
