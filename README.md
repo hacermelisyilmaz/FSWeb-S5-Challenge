@@ -54,6 +54,7 @@ Aşağıdaki soruları yanıtlayarak bu sprint'in kavramlarını anladığınız
 1. DOM nedir?
    Tarayıcı, HTML ve CSS kodlarıyla sayfayı inşa ettikten sonra JavaScript kullanarak sayfanın görünümü ve eylemleri için, HTML kodundaki her ögeyi içeren obje tipli bir model inşa eder. Bu objeye Belge Nesne Modeli (Document Object Model) yani kısaca DOM denir. Çok basitleştirmek istersek: JavaScript içinden erişebilmek için JS içinde tanımladığımız HTML elementlerinin her biri DOM oluyor.
 2. Bir event nedir?
+   Tıklama, imleci hareket ettirme, sayfayı kaydırma, tuşa basma gibi kullanıcının internet sayfasıyla girebileceği her türlü etkileşim yoluna event denir.
 3. Bir event dinleyici(listener) nedir?
 4. Neden bir NodeList'i Array'e dönüştürelim??
 5. Bileşen nedir?
