@@ -61,3 +61,4 @@ Aşağıdaki soruları yanıtlayarak bu sprint'in kavramlarını anladığınız
    NodeList, HTMLCollection gibi array-like bir objedir ve tüm array-like objeler spread operatörü ile array'e çevrilebilir:
    const array = [...arrayLikeObject];
 5. Bileşen nedir?
+   Sayfa içinde tekrar eden anlamlı yapılara denir. HTML iskeletleri ve CSS iskeletleri ya aynı ya çok benzerdir: navigation bardaki her bir button, veya haber sitesinde alt alta sıralanmış haberler gibi.
