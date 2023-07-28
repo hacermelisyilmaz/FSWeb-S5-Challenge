@@ -58,4 +58,6 @@ Aşağıdaki soruları yanıtlayarak bu sprint'in kavramlarını anladığınız
 3. Bir event dinleyici(listener) nedir?
    Event dinleyiciler bir kullanıcı interaction'ıyla bu interaction sonucunda çalışacak kodun ilişkilendirilmesi için kullanılır.
 4. Neden bir NodeList'i Array'e dönüştürelim??
+   NodeList, HTMLCollection gibi array-like bir objedir ve tüm array-like objeler spread operatörü ile array'e çevrilebilir:
+   const array = [...arrayLikeObject];
 5. Bileşen nedir?
