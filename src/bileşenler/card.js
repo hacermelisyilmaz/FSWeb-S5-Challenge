@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const Card = (makale) => {
   // GÖREV 5
   // ---------------------
@@ -58,6 +60,24 @@ const cardEkleyici = (secici) => {
   // Card bileşenini kullanarak yanıttaki her makale nesnesinden bir kart oluşturun.
   // Her cardı, fonksiyona iletilen seçiciyle eşleşen DOM'daki öğeye ekleyin.
   //
+
+  const contDOM = document.querySelector(secici);
+
+  axios
+    .get("http://localhost:5001/api/makaleler")
+    .then((response) => {
+      const makaleler = response.data.makaleler;
+
+      for (let tab in makaleler) {
+        for (let makale of makaleler[tab]) {
+          const card = Card(makale);
+          contDOM.appendChild(card);
+        }
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 };
 
 export { Card, cardEkleyici };
